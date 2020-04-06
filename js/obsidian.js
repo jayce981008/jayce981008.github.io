@@ -1259,5 +1259,7 @@ $(function () {
   utiliseBgColor();
   initialTyped();
   Obsidian.setCodeRowWithLang();
-  console.log("%c Github %c", "background:#24272A; color:#73ddd7", "", "https://github.com/TriDiamond/hexo-theme-obsidian");
+  console.log("%c 欢迎访问我的个人博客网站 %c", "background:#24272A; color:#73ddd7", "", "");
+  console.log("%c Blogger GitHub %c", "background:#24272A; color:#73ddd7", "", "https://github.com/jayce981008");
+  console.log("%c Obsidian GitHub %c", "background:#24272A; color:#73ddd7", "", "https://github.com/TriDiamond/hexo-theme-obsidian");
 });
