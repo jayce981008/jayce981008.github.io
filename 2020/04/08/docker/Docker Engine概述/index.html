@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - Jayce</title>
+    <title>Docker Engine概述 - Jayce</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Jayce,Blog,个人博客,博客,Jayce&#39;s Blog,"> 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="Docker Engine 是一种开源容器化技术，用于构建和容器化您的应用程序。Docker Engine 通过以下方式充当 client-server 应用程序：
+
+具有长时间运行的守护进程的服务,"> 
     <meta name="author" content="Jayce"> 
     <link rel="alternative" href="atom.xml" title="Jayce" type="application/atom+xml"> 
     <link rel="icon" href="https://raw.githubusercontent.com/jayce981008/jayce981008.github.io/master/img/favicon.ico"> 
@@ -57,7 +59,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="https://raw.githubusercontent.com/jayce981008/jayce981008.github.io/master/img/favicon.ico" alt="" data-url="https://jayce.me">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Hello World</h3>
+        <h3 class="subtitle">Docker Engine概述</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -87,30 +89,33 @@
         <div class="else">
             <p class="animated fadeInDown">
                 
-                <a href="javascript:;"><b>「 </b>文章<b> 」</b></a>
+                <a href="/categories/Docker"><b>「
+                    </b>DOCKER<b> 」</b></a>
                 
-                四月 06, 2020
+                四月 08, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/04/06/hello-world/" title="Hello World" class="">Hello World</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/04/08/docker/Docker%20Engine%E6%A6%82%E8%BF%B0/" title="Docker Engine概述" class="">Docker Engine概述</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    1.8k
+                    6.6k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    2 mins.
+                    6 mins.
                 </span>
                 
                 
                 
             </p>
             
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Docker/" rel="tag">Docker</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Docker-Engine/" rel="tag">Docker Engine</a></li></ul>
             
         </div>
     </div>
@@ -131,15 +136,105 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <p>Docker Engine 是一种开源容器化技术，用于构建和容器化您的应用程序。Docker Engine 通过以下方式充当 client-server 应用程序：</p>
+<ul>
+<li>具有长时间运行的守护进程的服务器<a href="https://docs.docker.com/engine/reference/commandline/dockerd/" target="_blank" rel="noopener">dockerd</a>。</li>
+<li>API，用于指定程序可以用来与 Docker 守护程序进行通信的接口。</li>
+<li>命令行界面（CLI）客户端<a href="https://docs.docker.com/engine/reference/commandline/cli/" target="_blank" rel="noopener">docker</a>。</li>
+</ul>
+<p>CLI 使用 Docker API 通过脚本或直接 CLI 命令控制或与 Docker 守护程序进行交互。许多其他 Docker 应用程序都使用基础 API 和 CLI。守护程序创建和管理 Docker 对象，例如 images， containers， networks，和 volumes。</p>
+<p>Docker Engine 具有三种类型的更新通道：<strong>Stable</strong>, <strong>Test</strong>, 和 <strong>Nightly</strong>:：</p>
+<ul>
+<li><strong>Stable</strong>可为您提供最新版本，以提供一般可用性。</li>
+<li><strong>Test</strong>提供了预发布的版本，这些版本可以在正式发布之前进行测试。</li>
+<li><strong>Nightly</strong>为您提供了下一个主要版本的最新工作进展。</li>
+</ul>
+<p>有关更多信息，请参见<a href="https://docs.docker.com/install/#release-channels" target="_blank" rel="noopener">发布渠道</a>。</p>
+<h2 id="支持的平台"><a href="#支持的平台" class="headerlink" title="支持的平台"></a>支持的平台</h2><p>Docker Engine 可通过 Docker Desktop，Windows Server 以及各种静态二进制安装在各种 Linux 平台，<a href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener">Mac</a> 和<a href="https://docs.docker.com/docker-for-windows/install/" target="_blank" rel="noopener">Windows</a>上使用。在下面找到您喜欢的操作系统。</p>
+<h3 id="桌面"><a href="#桌面" class="headerlink" title="桌面"></a>桌面</h3><table>
+<thead>
+<tr>
+<th align="left">平台</th>
+<th align="center">x86_64</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener">Mac 版 Docker 桌面（macOS）</a></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.docker.com/docker-for-windows/install/" target="_blank" rel="noopener">适用于 Windows 的 Docker 桌面（Microsoft Windows 10）</a></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+</tr>
+</tbody></table>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><table>
+<thead>
+<tr>
+<th align="left">平台</th>
+<th align="center">x86_64 / amd64</th>
+<th align="center">ARM</th>
+<th align="center">ARM64 / AARCH64</th>
+<th align="center">IBM Power (ppc64le)</th>
+<th align="center">IBM Z（s390x）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank" rel="noopener">CentOS</a></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.docker.com/install/linux/docker-ce/debian/" target="_blank" rel="noopener">Debian</a></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.docker.com/install/linux/docker-ce/fedora/" target="_blank" rel="noopener">Fedora</a></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank" rel="noopener">Ubuntu</a></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+<td align="center"><img src="https://docs.docker.com/install/images/green-check.svg"></td>
+</tr>
+</tbody></table>
+<h2 id="发布渠道"><a href="#发布渠道" class="headerlink" title="发布渠道"></a>发布渠道</h2><h3 id="Stable"><a href="#Stable" class="headerlink" title="Stable"></a>Stable</h3><p>年月发布是通过与主分支不同的发布分支进行的。<code>&lt;year&gt;.&lt;month&gt;</code>例如， 使用格式创建分支<code>18.09</code>。年-月名称表示预期最早发布的最早日历月。所有其他补丁程序发行均从该分支机构执行。例如，一旦<code>v18.09.0</code>发布，所有后续的修补程序版本都是从<code>18.09</code>分支构建的。</p>
+<h3 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h3><p>为准备新的月份发布，<code>YY.mm</code>当 Docker 期望该发行版的里程碑完成功能后，将从 master 分支创建具有格式的分支。Beta 版和候选发行版等预发行版是从各自的发行分支进行的。补丁发布和相应的预发布是从相应的发布分支中执行的。</p>
+<blockquote>
+<p><strong>注意：</strong> 虽然完成了预发行以协助稳定过程，但不提供任何保证。</p>
+</blockquote>
+<p><code>test-YY.mm</code>例如，可以使用指定格式在测试渠道中针对目标年份月份发布用于预发布的二进制文件<code>test-18.09</code>。</p>
+<h3 id="Nightly"><a href="#Nightly" class="headerlink" title="Nightly"></a>Nightly</h3><p>Nightly 构建会为您提供下一个主要版本的最新工作进展。它们每天从 master 分支创建一次，版本格式为：</p>
+<pre><code>    0.0.0-YYYYmmddHHMMSS-abcdefabcdef</code></pre><p>例如，其中时间是 UTC 的提交时间，最后的后缀是提交哈希的前缀<code>0.0.0-20180720214833-f61e0f7</code>。</p>
+<p>这些构建允许从 master 分支上的最新代码进行测试。</p>
+<blockquote>
+<p><strong>注意：</strong> 夜间构建不具备任何条件或保证。</p>
+</blockquote>
+<p>这些构建的发布渠道称为<code>nightly</code>。</p>
+<h2 id="支持"><a href="#支持" class="headerlink" title="支持"></a>支持</h2><p>在第一个年度月份的通用可用性版本发布后的 7 个月内，将根据需要对 Docker Engine 年度版本的分支发布版本进行支持。</p>
+<p>这意味着将在生命周期结束之前评估错误报告和向后发布分支的反向移植。</p>
+<p>年月分支的寿命终止后，可以从存储库中删除该分支。</p>
+<h2 id="向后移植"><a href="#向后移植" class="headerlink" title="向后移植"></a>向后移植</h2><p>Docker 公司优先考虑向 Docker 产品的反向移植。Docker 员工或存储库维护人员将尽力确保将合理的错误修正纳入有效发行版。</p>
+<p>如果有一些重要的修订应考虑向后移植到活动版本分支，请确保在 PR 说明中突出显示此内容，或在 PR 中添加注释。</p>
+<h2 id="升级路径"><a href="#升级路径" class="headerlink" title="升级路径"></a>升级路径</h2><p>修补程序版本始终与其年份月份版本向后兼容。</p>
+<h2 id="许可"><a href="#许可" class="headerlink" title="许可"></a>许可</h2><p>Docker 已获得 Apache 许可证 2.0 版的许可。有关完整的许可证文本，请参阅 <a href="https://github.com/moby/moby/blob/master/LICENSE" target="_blank" rel="noopener">LICENSE</a>。</p>
+<h2 id="报告安全问题"><a href="#报告安全问题" class="headerlink" title="报告安全问题"></a>报告安全问题</h2><p>Docker 维护人员非常重视安全性。如果发现安全问题，请立即引起他们的注意！</p>
+<p>请不要提出公开问题；而是将您的报告私下发送到 <a href="mailto:security@docker.com">security@docker.com</a>。</p>
+<p>非常感谢安全报告，Docker 会公开感谢您。</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>设置 Docker 之后，您可以通过<a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">Docker</a>入门学习基础知识 。</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -185,7 +280,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#支持的平台"><span class="toc-number">1.</span> <span class="toc-text">支持的平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#桌面"><span class="toc-number">1.1.</span> <span class="toc-text">桌面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服务器"><span class="toc-number">1.2.</span> <span class="toc-text">服务器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布渠道"><span class="toc-number">2.</span> <span class="toc-text">发布渠道</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Stable"><span class="toc-number">2.1.</span> <span class="toc-text">Stable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Test"><span class="toc-number">2.2.</span> <span class="toc-text">Test</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Nightly"><span class="toc-number">2.3.</span> <span class="toc-text">Nightly</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#支持"><span class="toc-number">3.</span> <span class="toc-text">支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向后移植"><span class="toc-number">4.</span> <span class="toc-text">向后移植</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#升级路径"><span class="toc-number">5.</span> <span class="toc-text">升级路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#许可"><span class="toc-number">6.</span> <span class="toc-text">许可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#报告安全问题"><span class="toc-number">7.</span> <span class="toc-text">报告安全问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始"><span class="toc-number">8.</span> <span class="toc-text">开始</span></a></li></ol>
                 </div>
             </div>
             
