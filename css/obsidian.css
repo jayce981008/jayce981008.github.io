@@ -96,6 +96,9 @@ pre code .language-mark b {
 .content li a {
   color: #232323;
 }
+.content li p {
+  display: initial;
+}
 .content td a {
   color: #232323;
 }
